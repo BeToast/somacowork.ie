@@ -1,0 +1,32 @@
+/* #nav-desk li a{
+  margin-right:0;
+  font-size: large;
+}
+#nav-side li a {
+  margin-right:0;
+}
+
+.header-img{
+  height: 60px;
+}
+
+@media only screen and (max-width : 600px) {
+  .header-img {
+    height: 52px;
+  }
+}
+
+@media only screen and (max-width : 502px) {
+  .hide-at-502 {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .hide-at-320 {
+    display: none !important;
+  }
+  .show-at-320 {
+    display: inline !important;
+  }
+} */
