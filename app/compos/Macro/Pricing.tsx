@@ -9,6 +9,7 @@ const Pricing: React.FC<{
 }) => {
   const productJSX: React.ReactNode = products.map(prod => (
     <PricingCard 
+      key={prod.key}
       title={prod.title}
       prices={prod.prices}
       caption={prod.caption}

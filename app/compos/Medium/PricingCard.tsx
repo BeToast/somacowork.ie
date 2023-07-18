@@ -29,7 +29,7 @@ const PricingCard: React.FC<{
           </div>
           <div className="mb-4">
             {prices.map(currPrice => (
-              <h3 className="flex flex-row mb-2 text-3xl">
+              <h3 key={currPrice.price} className="flex flex-row mb-2 text-3xl">
                 {(currPrice.text ? 
                   <div className="flex-1 grid">
                     <small className="justify-self-end leading-8 text-base text-neutral-800 dark:text-neutral-300">

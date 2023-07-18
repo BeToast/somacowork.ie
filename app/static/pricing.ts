@@ -4,6 +4,7 @@ export type price = {
 }
 
 export type product = {
+  key: number,
   title: string,
   prices: price[],
   caption: string,
@@ -12,6 +13,7 @@ export type product = {
 
 export const products: product[] = [
   {
+    key: 0,
     title: "Virtual Office",
     prices: [
       {price:75}
@@ -19,6 +21,7 @@ export const products: product[] = [
     caption: "Your Gateway to Flexibility and Professionalism",
     description: "Elevate your business presence with our Virtual Office solution. Enjoy the perks of a business address and mail handling services all without the need for a physical workspace. Maintain flexibility while projecting a professional image, allowing you to focus on what matters most—growing your business. Experience the convenience and efficiency of our Virtual Office at Soma.",
   },{
+    key: 1,
     title: "Hotdesk",
     prices: [
       {price:160}
@@ -26,6 +29,7 @@ export const products: product[] = [
     caption: "Work Flexibly and Connect Seamlessly",
     description: "Experience the freedom of our Hotdesk Solution, designed for professionals on the go. With our flexible workspace, you can enjoy the benefits of a fully equipped desk whenever you need it. Whether you're a freelancer, remote worker, or constantly on the move, our Hotdesk Solution provides you with a productive environment and the opportunity to connect with like-minded individuals. Embrace flexibility, enhance your productivity, and make meaningful connections at Soma.",
   },{
+    key: 2,
     title: "Dedicated Desk",
     prices: [
       {price:230, text: "near windows"},
@@ -34,6 +38,7 @@ export const products: product[] = [
     caption: "Your Personalised Workspace for Maximum Productivity",
     description: "Experience the ultimate in workspace customisation with our Dedicated Desk Solution. Enjoy the luxury of having a designated desk exclusively for your use, complete with all the amenities you need to thrive. Personalise your space to suit your preferences, create a home for your ideas, and establish a routine that fosters productivity. Embrace the convenience and comfort of our Dedicated Desk Solution at Soma, where your workspace becomes an extension of your professional identity.",
   },{
+    key: 3,
     title: "Private Office",
     prices:  [
       {price:400, text: "single"},
