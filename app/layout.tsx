@@ -3,13 +3,10 @@ import './globals.css'
 import type { Metadata } from 'next'
 import dynamic from "next/dynamic";
 
-import { Inter } from 'next/font/google'
-import { Roboto } from "next/font/google";
-
 import Header from "./compos/Macro/Header";
 
-const inter = Inter({ subsets: ['latin'] });
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+import { Outfit } from 'next/font/google'
+const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'soma',
@@ -23,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={outfit.className}>
         <div className="flex flex-col min-h-screen">
           <div className='flex'>
             <Header />

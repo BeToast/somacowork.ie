@@ -1,6 +1,6 @@
 import { product, products } from '@/app/static/pricing';
 import React from 'react';
-import PricingCard from '../Medium/PricingCard';
+import PricingCard from './PricingCard';
 
 const Pricing: React.FC<{
   title: string

@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import React from "react";
-const ButtonDy = dynamic(() => import("../Micro/Button"), {ssr: false});
+const ButtonDy = dynamic(() => import("../app/compos/Micro/Button"), {ssr: false});
 
 import { price } from "@/app/static/pricing";
 
