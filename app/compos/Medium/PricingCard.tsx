@@ -29,16 +29,24 @@ const PricingCard: React.FC<{
           </div>
           <div className="mb-4">
             {prices.map(currPrice => (
-              <h3 className="mb-2 text-3xl">
+              <h3 className="flex flex-row mb-2 text-3xl">
                 {(currPrice.text ? 
-                  <small className="text-base text-neutral-800 dark:text-neutral-300">
-                    {currPrice.text}
-                  </small>
+                  <div className="flex-1 grid">
+                    <small className="justify-self-end leading-8 text-base text-neutral-800 dark:text-neutral-300">
+                      {currPrice.text}
+                    </small>
+                  </div>
                 : <></>)}
-                <strong> €{currPrice.price}</strong>
-                <small className="text-base text-neutral-500 dark:text-neutral-300">
-                  /month + VAT
-                </small>
+                <div className="grid flex-0 first:flex-auto pr-1 pl-1">
+                  <div className="justify-self-end">
+                    <strong> €{currPrice.price}</strong>
+                  </div>
+                </div>
+                <div className="flex-1 even:flex-auto grid">
+                  <small className="justify-self-start self-end text-base text-neutral-500 dark:text-neutral-300">
+                    /month + VAT
+                  </small>
+                </div>
               </h3>
             ))}
           </div>

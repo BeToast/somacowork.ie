@@ -21,7 +21,7 @@ const Pricing: React.FC<{
       <h2 className="mb-4 text-center text-3xl font-bold">{title}</h2>
       {/* Pills content */}
       <div className="mb-6">
-        <div className="grid gap-6 md:grid-cols-2 md:gap-x-12">
+        <div className="grid gap-6 md:grid-cols-2">
           {productJSX}
         </div>
       </div>
