@@ -19,12 +19,12 @@ module.exports = {
       current: 'currentColor',
       orange: '#fd5829',
       grey: {
-        100: '#f4f4f4',
-        200: '#6c757d',
-        300: '#adb5bd',
-        400: '#6c757d',
+        100: '#6c757d',
+        200: '#adb5bd',
+        300: '#6c757d',
         text: '#343a40',
-      }
+      },
+      white: '#f4f4f4',
     }
   },
   plugins: [require("tw-elements/dist/plugin.cjs")],

@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Header from "./compos/Macro/Header";
 
 import { Outfit } from 'next/font/google'
+import Footer from './compos/Macro/Footer';
 const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function RootLayout({
           {/* <div className=""> */}
             {children}
           </div>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </body>
     </html>
