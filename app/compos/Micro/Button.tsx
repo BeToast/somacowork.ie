@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect } from "react";
-import { initTE, Ripple } from "tw-elements";
 
 const Button: React.FC<{
   buttonClass?: string,
@@ -10,9 +9,6 @@ const Button: React.FC<{
   buttonClass,
   children,
 }) => {
-  useEffect(() => {
-    initTE({ Ripple });
-  }, []);
   return(<>
     <button
       type="button"

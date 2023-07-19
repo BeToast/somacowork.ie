@@ -10,7 +10,7 @@ export default function Home() {
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <main className="flex flex-col">
-      <div className="max-h-80">
+      <div className="h-80">
         <SomaImage src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"/>
       </div>
       <SomaDiv className="pb-4">

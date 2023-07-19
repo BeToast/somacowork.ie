@@ -4,9 +4,9 @@ import type { Metadata } from 'next'
 import dynamic from "next/dynamic";
 
 import Header from "./compos/Macro/Header";
+import Footer from './compos/Macro/Footer';
 
 import { Outfit } from 'next/font/google'
-import Footer from './compos/Macro/Footer';
 const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {

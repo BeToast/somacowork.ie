@@ -20,9 +20,9 @@ const footerRows:{key:number, cont:React.ReactNode}[] = [
 ];
 
 const footerRowsJsx: React.ReactNode[] = footerRows.map(row => (
-  <div className='flex w-full pl-3 pb-1'>
+  <div key={row.key} className='flex w-full pl-3 pb-1'>
     <div className='sm:w-2/5'></div>
-    <div key={row.key} className='min-w-min'>
+    <div className='min-w-min'>
       {row.cont}
     </div>
   </div>

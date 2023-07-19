@@ -6,8 +6,7 @@ const SomaImage: React.FC<{
   return(<>
     <img
       src={src}
-      className="h-full max-w-full object-fill"
-      alt="..."
+      className="h-full w-full"
     />
   </>);
 }
