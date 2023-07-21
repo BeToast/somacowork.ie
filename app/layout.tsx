@@ -1,10 +1,9 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import dynamic from "next/dynamic";
 
-import Header from "./compos/Macro/Header";
-import Footer from './compos/Macro/Footer';
+import Header from './components/reusable/Header';
+import Footer from './components/reusable/Footer';
 
 import { Outfit } from 'next/font/google'
 const outfit = Outfit({ subsets: ['latin'] });
@@ -27,7 +26,6 @@ export default function RootLayout({
             <Header />
           </div>
           <div className="flex-grow">
-          {/* <div className=""> */}
             {children}
           </div>
           <Footer />

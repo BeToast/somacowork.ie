@@ -16,12 +16,16 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      orange: '#fd5829',
+      orange: {
+        DEFAULT: '#fd5829',
+        dark: '#cc4823',
+      },
       grey: {
         100: '#6c757d',
         200: '#adb5bd',
         300: '#6c757d',
         text: '#343a40',
+        DEFAULT: '#343a40',
       },
       white: '#f4f4f4',
     }

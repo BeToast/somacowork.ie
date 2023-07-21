@@ -3,7 +3,7 @@ export type price = {
   text?: string,
 }
 
-export type product = {
+export type Product = {
   key: number,
   title: string,
   prices: price[],
@@ -11,7 +11,7 @@ export type product = {
   description: string,
 }
 
-export const products: product[] = [
+export const products: Product[] = [
   {
     key: 0,
     title: "Virtual Office",

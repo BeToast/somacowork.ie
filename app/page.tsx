@@ -1,48 +1,67 @@
-import dynamic from "next/dynamic";
-import SomaImage from "./compos/Macro/SomaImage";
-import SomaText, { Align, Color, Size } from "./compos/Macro/SomaText";
-import { SomaColor } from "./static/enum";
-import SomaDiv from "./compos/Macro/SomaDiv";
-import SomaQuote from "./compos/Macro/SomaQuote";
-const ButtonDy = dynamic(() => import("./compos/Micro/Button"), {ssr: false});
+//external imports
 
-export default function Home() {
+//internal imports
+import SomaButton from "./components/reusable/SomaButton";
+import About from "./components/sections/About";
+import FeaturesAmenities from "./components/sections/FeaturesAmenities";
+import DiverseCareers from "./components/sections/DiverseCareers";
+import SomaQuote from "./components/reusable/SomaQuote";
+import Pricing from "./components/sections/Pricing";
+import Home from "./components/sections/Home";
+import Gallery from "./components/sections/Gallery";
+import Contact from "./components/sections/Contact";
+//dynamic imports
+// import dynamic from "next/dynamic";
+// const Soma = dynamic(() => import("./compos/Macro/SomaButton"), {ssr: false});
+
+
+export default function Page() {
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <main className="flex flex-col">
-      <div className="h-80">
-        <SomaImage src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"/>
-      </div>
-      <SomaDiv className="pb-4">
-        <SomaText 
-          align={Align.Center}
-          size={Size.Primary}
-          color={Color.Default}
-          header={"Welcome"}
-          body={"Embrace the power of collaboration at Soma Coworking, where innovation meets community in the heart of Moycullen. Step into our dynamic space, where professionals from diverse careers unite to create, connect, and thrive. Ignite your creativity and cultivate meaningful connections as you tap into collective wisdom and expand your horizons within an environment that nurtures your professional journey."} 
-        />
-      </SomaDiv>
-      <SomaDiv bgColor={SomaColor.Orange}>
-        <SomaQuote txtColor={SomaColor.White}>
+
+      {/* HOME */}
+      <Home />
+
+      {/* Big quote*/}
+      <div className="bg-orange">
+        <SomaQuote txtColor="text-white">
+        {/* "I have never worked in a better environment." */}
           „I have never worked in a better environment.“
         </SomaQuote>
-      </SomaDiv>
-      <SomaDiv className="flex">
-        <div className="w-2/5">
-          <SomaImage src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"/>
+      </div>
+
+      {/* ABOUT */}
+      <About />
+
+      {/* DIVERSE CAREERS, LIMITLESS POSSIBILITIES */}
+      <DiverseCareers />
+
+      {/* SPACE FEATURES AND AMENITIES SECTION */}
+      <FeaturesAmenities />
+
+      {/* CONTACT ACTION */}
+      <div className="p-6 pb-8 flex flex-col justify-center bg-orange">
+        <div className="flex flex-wrap w-full justify-center space-x-2 py-5 text-lg font-semibold text-white text-center">
+          <p>Ready to take the next step?</p>
+          <p>Contact us today to book a tour or inquire about our membership options.</p>
         </div>
-        <div className="w-3/5 pl-8">
-          
-        <SomaText 
-          align={Align.Left}
-          size={Size.Primary}
-          color={Color.Default}
-          header={"About"}
-          body={"At Soma, we are proud to be part of the vibrant community of Moycullen, Galway. We believe that great ideas can come from anywhere, and our mission is to provide a collaborative environment that nurtures innovation and fosters connections."}
-        />
+        <div className="flex w-full justify-center">
+          <SomaButton.Contact className="">
+            contact
+          </SomaButton.Contact>
         </div>
-      </SomaDiv>
-      
+      </div>
+
+      {/* PRICING AND MEMBERSHIP */}
+      <Pricing />  
+
+      {/* GALLERY */}
+
+      <Gallery />
+
+      {/* CONTACT FORM */}
+
+      <Contact />
     </main>
-  )
+  );
 }
