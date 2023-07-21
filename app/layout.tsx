@@ -5,6 +5,11 @@ import type { Metadata } from 'next'
 import Header from './components/reusable/Header';
 import Footer from './components/reusable/Footer';
 
+//firebase
+import { getFirebaseApp } from './firebase'
+const app = getFirebaseApp();
+
+//font
 import { Outfit } from 'next/font/google'
 const outfit = Outfit({ subsets: ['latin'] });
 

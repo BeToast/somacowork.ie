@@ -13,7 +13,7 @@ const Contact: React.FC<{
           align= "text-center"
           txtColor= "text-orange"
         >
-          Let&aposs get in touch! 
+          Let&apos;s get in touch! 
         </SomaCard.Head>
         <SomaCard.Body
           align="text-center"
@@ -32,7 +32,7 @@ const Contact: React.FC<{
           txtColor="text-grey-100"
           padding=""
         >
-          Let&aposss get in touch!
+          Let&apos;s get in touch!
         </SomaCard.Head>
         <SomaCard.Head
           size= "text-5xl"
@@ -40,14 +40,14 @@ const Contact: React.FC<{
           txtColor="text-grey-200"
           padding=""
         >
-          Let&aposss get in touch!
+          Let&apos;s get in touch!
         </SomaCard.Head>
         <SomaCard.Head
           size= "text-5xl"
           align= "text-center"
           txtColor= "text-white"
         >
-          Let&aposss get in touch!
+          Let&apos;s get in touch!
         </SomaCard.Head>
         <SomaCard.Body
           align="text-center"
