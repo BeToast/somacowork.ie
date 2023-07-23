@@ -1,15 +1,15 @@
 //section imports
-import Home from "./components/sections/Home";
-import About from "./components/sections/About";
-import DiverseCareers from "./components/sections/DiverseCareers";
-import FeaturesAmenities from "./components/sections/FeaturesAmenities";
-import Pricing from "./components/sections/Pricing";
-import Gallery from "./components/sections/Gallery";
-import Contact from "./components/sections/Contact";
+import Home from "./components/Home";
+import About from "./components/About";
+import DiverseCareers from "./components/DiverseCareers";
+import FeaturesAmenities from "./components/FeaturesAmenities";
+import Pricing from "./components/Pricing";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
 
 //reusable imports
-import SomaButton from "./components/reusable/SomaButton";
-import SomaQuote from "./components/reusable/SomaQuote";
+import SomaButton from "./components/SomaButton";
+import SomaQuote from "./components/SomaQuote";
 //dynamic imports
 // import dynamic from "next/dynamic";
 // const Soma = dynamic(() => import("./compos/Macro/SomaButton"), {ssr: false});

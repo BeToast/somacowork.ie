@@ -1,5 +1,3 @@
-import React from 'react';
-
 const footerRows:{key:number, cont:React.ReactNode}[] = [
   {
     key: 1,

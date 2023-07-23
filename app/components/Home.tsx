@@ -1,4 +1,4 @@
-import SomaCard from "../reusable/SomaCard";
+import SomaCard from "./SomaCard";
 
 const Home: React.FC<{
   

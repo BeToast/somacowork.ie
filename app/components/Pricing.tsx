@@ -1,6 +1,6 @@
-import PriceGrid from "../reusable/PriceGrid";
-import SomaButton from "../reusable/SomaButton";
-import SomaCard from "../reusable/SomaCard";
+import PriceGrid from "./PriceGrid";
+import SomaButton from "./SomaButton";
+import SomaCard from "./SomaCard";
 
 const Pricing: React.FC<{
   

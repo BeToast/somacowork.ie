@@ -1,4 +1,4 @@
-import SomaCard from "../reusable/SomaCard";
+import SomaCard from "./SomaCard";
 
 const DiverseCareers: React.FC<{
   
