@@ -6,7 +6,10 @@ const DiverseCareers: React.FC<{
   
 }) => {
   return(<>
-    <div className="flex justify-center py-10 bg-orange">
+    <div 
+      id="diverseCareers"
+      className="flex justify-center py-10 bg-orange"
+    >
       <div className="flex-1">
         <SomaCard.Frame>
           <SomaCard.Head

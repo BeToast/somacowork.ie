@@ -2,7 +2,7 @@
 import Home from "./components/Home";
 import About from "./components/About";
 import DiverseCareers from "./components/DiverseCareers";
-import FeaturesAmenities from "./components/FeaturesAmenities";
+import Amenities from "./components/Amenities";
 import Pricing from "./components/Pricing";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
@@ -17,7 +17,7 @@ import SomaQuote from "./components/SomaQuote";
 
 export default function Page() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col overflow-hidden">
 
       <Home />
 
@@ -31,7 +31,7 @@ export default function Page() {
 
       <DiverseCareers />
 
-      <FeaturesAmenities />
+      <Amenities />
 
       <div className="p-6 pb-8 flex flex-col justify-center bg-orange">
         <div className="flex flex-wrap w-full justify-center space-x-2 py-5 text-lg font-semibold text-white text-center">

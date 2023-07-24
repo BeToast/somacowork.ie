@@ -1,10 +1,21 @@
 const Header: React.FC = () => {
   return (
-    <nav className="sticky top-0 flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
-      <div className="flex w-full flex-wrap items-center justify-between px-3">
+    <nav className="sticky top-0 flex w-full bg-white items-center justify-between py-2 text-xl text-neutral-800 lg:py-4">
+      
+      {/* LEFT */}
+      <div className="flexitems-center space-x-4 px-3">
         <div className="ml-2">
-          <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#">soma logo here</a>
+          <a className="" href="#">soma logo here</a>
         </div>
+      </div>
+
+      {/* RIGHT */}
+      <div className="hidden sm:flex items-center space-x-4 mr-2 px-3">
+        <a className="hover:text-orange" href="#">Top</a>
+        <a className="hover:text-orange" href="#about">About</a>
+        <a className="hover:text-orange" href="#amenities">Amenities</a>
+        <a className="hover:text-orange" href="#pricing">Pricing</a>
+        <a className="hover:text-orange" href="#contact">Contact</a>
       </div>
     </nav>
   );

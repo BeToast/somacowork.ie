@@ -7,7 +7,10 @@ const Home: React.FC<{
 }) => {
   return(<>
     {/* BIG IMAGE */}
-    <div className="h-80">
+    <div 
+      id="home"
+      className="h-80"
+    >
       <img 
         src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
         className="w-full h-full"  

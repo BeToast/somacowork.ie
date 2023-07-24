@@ -1,4 +1,5 @@
 import SomaCard from "./SomaCard";
+import ContactForm from "./ContactForm";
 
 const Contact: React.FC<{
   
@@ -6,8 +7,25 @@ const Contact: React.FC<{
   
 }) => {
   return(<>
-    <div className="flex flex-col p-6 bg-grey">
-      <SomaCard.Frame>
+    <div 
+      id="contact"
+      className="flex flex-col p-6 bg-grey"
+    >
+      <SomaCard.Head
+        size= "text-5xl"
+        align= "text-center"
+        txtColor= "text-orange"
+      >
+        Let&apos;s get in touch! 
+      </SomaCard.Head>
+      <ContactForm />
+    </div>
+  </>);
+}
+
+export default Contact;
+
+{/* <SomaCard.Frame>
         <SomaCard.Head
           size= "text-5xl"
           align= "text-center"
@@ -56,9 +74,4 @@ const Contact: React.FC<{
           these are all the colors in the pallet rn...
         </SomaCard.Body>
         
-        </SomaCard.Frame> 
-    </div>
-  </>);
-}
-
-export default Contact;
+        </SomaCard.Frame>  */}

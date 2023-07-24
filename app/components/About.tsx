@@ -6,9 +6,12 @@ const About: React.FC<{
   
 }) => {
   return(<>
-    <div className="flex">
+    <div 
+      id="about"
+      className="flex"
+    >
       {/* image */}
-      <div className="w-2/5">
+      <div className="hidden sm:block w-2/5">
         <img 
           src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
           className="w-full h-full"  
@@ -16,9 +19,9 @@ const About: React.FC<{
       </div>
 
 
-      <div className="w-3/5 pl-8 pt-10 pb-20"> {/* hardcoded padding!!! */}
+      <div className="w-full sm:w-3/5 pl-8 py-10"> {/* hardcoded padding!!! */}
         <div className="w-4/5">
-          <SomaCard.Frame>
+          <SomaCard.Frame padding="">
             <SomaCard.Head
               size="text-5xl"
               align="text-left"

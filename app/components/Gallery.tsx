@@ -6,7 +6,10 @@ const Gallery: React.FC<{
   
 }) => {
   return(<>
-    <div className="flex flex-col p-6">
+    <div 
+      id="gallery"
+      className="flex flex-col p-6"
+    >
       <SomaCard.Head
         size= "text-5xl"
         align= "text-left"

@@ -27,12 +27,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={outfit.className}>
         <div className="flex flex-col min-h-screen">
-          <div className='flex'>
-            <Header />
-          </div>
-          <div className="flex-grow">
-            {children}
-          </div>
+          <Header />
+          {children}
           <Footer />
         </div>
       </body>

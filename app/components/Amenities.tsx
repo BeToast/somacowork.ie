@@ -6,9 +6,12 @@ const FeaturesAmenities: React.FC<{
   
 }) => {
   return(<>
-    <div className="flex">
-      <div className="w-3/5 px-14 pt-10 pb-20"> {/* hardcoded padding!!! */}
-        <SomaCard.Frame>
+    <div 
+      id="amenities"
+      className="flex"
+    >
+      <div className="w-full sm:w-3/5 px-14 py-10"> {/* hardcoded padding!!! */}
+        <SomaCard.Frame padding="">
           <SomaCard.Head
             size="text-5xl"
             align="text-left"
@@ -50,7 +53,7 @@ const FeaturesAmenities: React.FC<{
         </div>
       </div>
       {/* image */}
-      <div className="w-2/5">
+      <div className="hidden sm:block w-2/5">
         <img
           src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
           className="h-full w-full"
