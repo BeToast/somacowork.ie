@@ -11,7 +11,7 @@ export type Product = {
   prices: price[],
   caption: string,
   description: string,
-  svg?: string,
+  svg?: React.ReactNode,
 }
 
 export const products: Product[] = [

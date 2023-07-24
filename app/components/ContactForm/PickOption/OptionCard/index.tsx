@@ -1,10 +1,12 @@
 const OptionCard: React.FC<{
+  className?: string;
   title: string,
-  svg?: string,
+  svg?: React.ReactNode,
   displayText?: string,
   option: string,
   setOption: React.Dispatch<React.SetStateAction<string>>,
 }> = ({
+  className,
   title,
   svg = null,
   displayText = title,
@@ -15,27 +17,27 @@ const OptionCard: React.FC<{
     setOption(optionTitle);
   };
 
-  const className = (title === option
+  const selectedClass = (title === option
     ?
-      'bg-orange text-white'
+      'bg-orange text-white fill-white'
     :
-      'bg-white hover:border-orange'
+      'bg-white hover:border-orange hover:fill-orange'
     );
   return (<>
     <div 
-      className={"flex-col flex-1 justify-items-center border-grey border-2 shadow-md "+className}
+      className={className+" flex-col flex-1 justify-items-center border-grey border-4 shadow-md "+selectedClass}
       onClick={() => handleOptionClick(title)}  
     >
       {(svg ?
-        <img 
-          className="w-15 h-15"
-          src={svg}
-          alt=""
-        />
+        <div className="flex justify-center items-center">
+          <div className="w-1/2 p-2">
+            {svg}
+          </div>
+        </div>
         :
         <></>
       )}
-      <p className="text-center">{displayText}</p>
+      <p className="text-center text-xl">{displayText}</p>
     </div>
   </>);
 }

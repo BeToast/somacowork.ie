@@ -22,11 +22,13 @@ const ContactForm: React.FC<{
   return(<>
     <div className="flex flex-col bg-white">
       <PickOption
+        className="p-6"
         option={option}
         setOption={setOption} 
       />
 
-      <FillDetails 
+      <FillDetails
+        className="p-6 pt-0"
         setFirstname={setFirstname}
         setSurname={setSurname}
         setEmail={setEmail}
