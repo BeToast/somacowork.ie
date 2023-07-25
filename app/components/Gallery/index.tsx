@@ -1,4 +1,4 @@
-import SomaCard from "./SomaCard";
+import SomaCard from "../SomaCard";
 
 const Gallery: React.FC<{
   

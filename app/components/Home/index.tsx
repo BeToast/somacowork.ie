@@ -1,4 +1,6 @@
-import SomaCard from "./SomaCard";
+import somaImage from "static/image";
+import SomaCard from "../SomaCard";
+import Image from "next/image";
 
 const Home: React.FC<{
   
@@ -9,11 +11,12 @@ const Home: React.FC<{
     {/* BIG IMAGE */}
     <div 
       id="home"
-      className="h-80"
+      className=""
     >
-      <img 
-        src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
-        className="w-full h-full"  
+      <Image 
+        src={somaImage.moycullenBuildingBanner}
+        className="w-full h-full shadow-md"
+        alt={""}
       />
     </div>
     <div>

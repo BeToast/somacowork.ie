@@ -1,5 +1,8 @@
 import SomaCard from "components/SomaCard";
-import LogoCard from "@/app/components/LogoCard";
+import LogoCard from "components/LogoCard";
+import somaImage from "static/image";
+
+import Image from "next/image";
 
 const FeaturesAmenities: React.FC<{
   
@@ -40,12 +43,22 @@ const FeaturesAmenities: React.FC<{
         />
       </div>
       {/* image */}
+      {/* <div className="hidden sm:grid w-2/5">
+        <Image
+          src={somaImage.handsComputer}
+          className="h-full shadow-sm"
+          alt={""}
+        />
+        </div> */}
       <div className="hidden sm:block w-2/5">
-          <img 
-            src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
-            className="w-full h-full"  
+        <div className="h-full overflow-clip">
+          <Image 
+            src={somaImage.handsComputer}
+            className="object-cover object-left h-full"
+            alt={""}
           />
         </div>
+      </div>
     </div>
   </>);
 }

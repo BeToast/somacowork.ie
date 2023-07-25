@@ -1,5 +1,6 @@
 import SomaCard from "components/SomaCard";
 import LogoCard from "../LogoCard";
+import somaImage from "static/image";
 
 const About: React.FC<{
 
@@ -12,11 +13,26 @@ const About: React.FC<{
       className="flex"
     >
       {/* image */}
+      {/* <div className="hidden sm:block w-2/5">
+        <div className="h-full rtl-grid overflow-hidden">
+          <div className="h-full rtl-grid overflow-clip">
+            <Image 
+              src={somaImage.moycullenCar}
+              className="object-cover h-full shadow-sm"
+              alt={""}
+            />
+          </div>
+        </div>
+      </div> */}
       <div className="hidden sm:block w-2/5">
-        <img 
-          src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
-          className="w-full h-full"  
-        />
+        <div className="h-full overflow-clip">
+          <img 
+            // src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
+            src="/moycullen_car.webp"
+            className="object-cover object-right h-full"
+            alt={""}
+          />
+        </div>
       </div>
 
 

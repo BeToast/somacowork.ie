@@ -13,6 +13,11 @@ module.exports = {
     //       'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
     //   },
     // },
+    extend: {
+      spacing: {
+        '69': '26rem',
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

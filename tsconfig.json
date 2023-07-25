@@ -23,6 +23,7 @@
       "@/*": ["./*"],
       "components/*": ["./app/components/*"],
       "static/*": ["./app/static/*"],
+      "image/*": ["./app/image/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote"],
