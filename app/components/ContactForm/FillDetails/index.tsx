@@ -1,4 +1,6 @@
 import SomaCard from "../../SomaCard";
+import { contactFormFields } from "@/app/static/contactForm";
+import InputField from "./InputField";
 
 const FillDetails: React.FC<{
   className?: string,
@@ -13,6 +15,7 @@ const FillDetails: React.FC<{
   setEmail,
   setPhone,
 }) => {
+
   
   return(<>
     <div className={className+" "}>
@@ -23,6 +26,17 @@ const FillDetails: React.FC<{
       >
         Fill in your details.
       </SomaCard.Head>
+      <div className="grid gap-6 md:grid-cols-2">
+        {contactFormFields.map((field) => (
+          <div key={field.key} className="">
+            <InputField
+              className=""
+              id={field.id}
+              placeholder={field.placeholder}            
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </>);
 }

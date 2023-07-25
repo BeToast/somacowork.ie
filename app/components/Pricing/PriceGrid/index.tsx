@@ -1,6 +1,6 @@
 import { Product, products } from '@/app/static/pricing';
 import React from 'react';
-import SomaCard from '../SomaCard';
+import SomaCard from '../../SomaCard';
 
 const PriceGrid: React.FC<{
 
