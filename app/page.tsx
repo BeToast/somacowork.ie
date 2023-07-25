@@ -1,15 +1,15 @@
 //section imports
-import Home from "./components/Home";
-import About from "./components/About";
-import DiverseCareers from "./components/DiverseCareers";
-import Amenities from "./components/Amenities";
-import Pricing from "./components/Pricing";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
+import Home from "components/Home";
+import About from "components/About";
+import DiverseCareers from "components/DiverseCareers";
+import Amenities from "components/Amenities";
+import Pricing from "components/Pricing";
+// import Gallery from "components/Gallery";
+import Contact from "components/Contact";
 
 //reusable imports
-import SomaButton from "./components/SomaButton";
-import SomaQuote from "./components/SomaQuote";
+import SomaButton from "components/SomaButton";
+import SomaQuote from "components/SomaQuote";
 //dynamic imports
 // import dynamic from "next/dynamic";
 // const Soma = dynamic(() => import("./compos/Macro/SomaButton"), {ssr: false});
@@ -47,7 +47,7 @@ export default function Page() {
 
       <Pricing />  
 
-      <Gallery />
+      {/* <Gallery /> */}
 
       <Contact />
     </main>

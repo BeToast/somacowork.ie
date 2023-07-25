@@ -4,8 +4,18 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  /* --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
+  --header-height: 48px;
+  --header-padding: 24px;
+}
+
+:target { scroll-margin-top: calc(var(--header-height) + calc(2*var(--header-padding))); }
+.soma-header-height{
+  height: var(--header-height);
+}
+
+.soma-header-padding{
+  padding-top: var(--header-padding);
+  padding-bottom: var(--header-padding);
 }
 
 /* @media (prefers-color-scheme: dark) {

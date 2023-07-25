@@ -1,4 +1,4 @@
-import SomaCard from "./SomaCard";
+import SomaCard from "components/SomaCard";
 import ContactForm from "./ContactForm";
 
 const Contact: React.FC<{
@@ -9,7 +9,7 @@ const Contact: React.FC<{
   return(<>
     <div 
       id="contact"
-      className="flex flex-col p-6 bg-grey"
+      className="flex flex-col p-6 bg-white"
     >
       <SomaCard.Head
         size= "text-5xl"

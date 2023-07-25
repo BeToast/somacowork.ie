@@ -20,7 +20,7 @@ const ContactForm: React.FC<{
   const formObj = {option, firstname, surname, email, phone};
 
   return(<>
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col">
       <PickOption
         className="p-6"
         option={option}

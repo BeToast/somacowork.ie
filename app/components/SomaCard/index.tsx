@@ -8,7 +8,7 @@ const Frame: React.FC<{
 }> = ({
   children,
   className = "",
-  padding = "py-6",
+  padding = "py-14",
 }) => {
   return(<>
     <div className={className+" flex flex-col min-w-min "+padding}>

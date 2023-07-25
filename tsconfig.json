@@ -20,7 +20,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "components/*": ["./app/components/*"],
+      "static/*": ["./app/static/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote"],

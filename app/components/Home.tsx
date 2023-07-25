@@ -16,7 +16,7 @@ const Home: React.FC<{
         className="w-full h-full"  
       />
     </div>
-    <div className="pb-4">
+    <div>
       <SomaCard.Frame>
         <SomaCard.Head
           size="text-5xl"

@@ -11,14 +11,21 @@ const InputField: React.FC<{
   placeholder,
   regex,
 }) => {
+  // const styles = theme => ({
+  //   multilineColor:{
+  //       color:'red'
+  //   }
+  // });
+
   return(<>
     <TextField
       className={"" + className}
       helperText=""
       id={id}
       label={placeholder}
-      sx={{ input: { color: 'orange' } }}
       variant="standard"
+      color="warning"
+      // InputProps={{ className: "orange"}}
     />
   </>);
 }

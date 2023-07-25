@@ -1,4 +1,4 @@
-import SomaCard from "../../SomaCard";
+import SomaCard from "@/app/components/SomaCard";
 import { contactFormFields } from "@/app/static/contactForm";
 import InputField from "./InputField";
 
@@ -16,7 +16,6 @@ const FillDetails: React.FC<{
   setPhone,
 }) => {
 
-  
   return(<>
     <div className={className+" "}>
       <SomaCard.Head

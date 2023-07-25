@@ -1,5 +1,5 @@
 import { products } from "@/app/static/pricing";
-import SomaCard from "../../SomaCard";
+import SomaCard from "components/SomaCard";
 import OptionCard from "./OptionCard";
 
 const PickOption: React.FC<{
