@@ -14,6 +14,7 @@ const PickOption: React.FC<{
   return(<>
     <div className={""+className}>
       <SomaCard.Head
+        padding="pb-6"
         size="text-2xl"
         align="text-left"
         txtColor="text-orange"
@@ -35,8 +36,8 @@ const PickOption: React.FC<{
         </div>
         <OptionCard
           className="py-2"
-            title="Tour"
-            displayText="Book a tour"
+            title="Chat"
+            displayText="Just to chat"
             option={option}
             setOption={setOption} 
           />

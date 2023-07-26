@@ -33,6 +33,7 @@ module.exports = {
         DEFAULT: '#343a40',
       },
       white: '#f4f4f4',
+      black: '#000000',
     }
   },
   darkMode: "class",

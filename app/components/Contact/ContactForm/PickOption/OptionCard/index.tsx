@@ -25,7 +25,7 @@ const OptionCard: React.FC<{
     );
   return (<>
     <div 
-      className={className+" flex-col flex-1 justify-items-center border-grey border-4 shadow-md "+selectedClass}
+      className={className+" flex-col flex-1 justify-items-center border-grey border shadow-md "+selectedClass}
       onClick={() => handleOptionClick(title)}  
     >
       {(svg ?
@@ -37,7 +37,7 @@ const OptionCard: React.FC<{
         :
         <></>
       )}
-      <p className="text-center text-xl">{displayText}</p>
+      <p className="text-center text-md">{displayText}</p>
     </div>
   </>);
 }

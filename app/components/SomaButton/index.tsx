@@ -18,7 +18,25 @@ const Contact: React.FC<{
   </>);
 }
 
-const SomaButton = { Contact,  }
+const SubmitForm: React.FC<{
+  children: React.ReactNode,
+  className?: string,
+}> = ({
+  children,
+  className = "",
+}) => {
+  return(<>
+    <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-orange-dark"}>
+      <button className="px-2 py-1 ">
+        <span className="text-black text-md font-normal">
+          {children}
+        </span>
+      </button>
+    </div>
+  </>);
+}
+
+const SomaButton = { Contact, SubmitForm }
 export default SomaButton;
 
 

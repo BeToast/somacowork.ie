@@ -1,24 +1,20 @@
-import SomaCard from "@/app/components/SomaCard";
-import { contactFormFields } from "@/app/static/contactForm";
+import SomaCard from "components/SomaCard";
+import SomaButton from "components/SomaButton";
 import InputField from "./InputField";
+import { input } from "../type";
 
 const FillDetails: React.FC<{
   className?: string,
-  setFirstname: React.Dispatch<React.SetStateAction<string | null>>,
-  setSurname: React.Dispatch<React.SetStateAction<string | null>>,
-  setEmail: React.Dispatch<React.SetStateAction<string | null>>,
-  setPhone: React.Dispatch<React.SetStateAction<string | null>>,
+  contactFormFields: input[],
 }> = ({
   className,
-  setFirstname,
-  setSurname,
-  setEmail,
-  setPhone,
+  contactFormFields,
 }) => {
 
   return(<>
-    <div className={className+" "}>
+    <div>
       <SomaCard.Head
+        padding="pb-6"
         size="text-2xl"
         align="text-left"
         txtColor="text-orange"
@@ -27,16 +23,19 @@ const FillDetails: React.FC<{
       </SomaCard.Head>
       <div className="grid gap-6 md:grid-cols-2">
         {contactFormFields.map((field) => (
-          <div key={field.key} className="">
-            <InputField
-              className=""
-              id={field.id}
-              placeholder={field.placeholder}            
-            />
-          </div>
+          <InputField
+            key={field.key}
+            id={field.id}
+            label={field.label}
+            setHook={field.setState}
+            type={field.type}        
+          />
         ))}
       </div>
     </div>
+    <SomaButton.SubmitForm>
+      {"Submit Form"}
+    </SomaButton.SubmitForm>
   </>);
 }
 
