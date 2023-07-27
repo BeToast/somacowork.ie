@@ -6,9 +6,15 @@
   --foreground-rgb: 0, 0, 0;
   --header-height: 48px;
   --header-padding: 24px;
+  --header-height-total: calc(calc(var(--header-height) + calc(2*var(--header-padding))));
+  --header-height-expanded: 304px;
 }
 
-:target { scroll-margin-top: calc(var(--header-height) + calc(2*var(--header-padding))); }
+:target { scroll-margin-top: calc(var(--header-height-total) - 2px) } 
+@media(max-width: 640px) { 
+  :target { scroll-margin-top: calc(var(--header-height-expanded) - 2px) }
+}
+
 .soma-header-height{
   height: var(--header-height);
 }
@@ -17,6 +23,34 @@
   padding-top: var(--header-padding);
   padding-bottom: var(--header-padding);
 }
+.soma-header-y {
+  height: var(--header-height-total);
+}
+
+.soma-header-expand {
+  animation-name: expand;
+  animation-duration: .6s;
+  height: var(--header-height-expanded)
+}
+/* @keyframes expand {
+  from {height: var(--header-height-total)}
+  to {height: auto}
+} */
+@keyframes expand {
+  from {height: var(--header-height-total)}
+  to {height: var(--header-height-expanded)}
+}
+.soma-header-retract {
+  animation-name: retract;
+  animation-duration: .3s;
+  height: var(--header-height-total)
+}
+@keyframes retract {
+  from {height: var(--header-height-expanded)}
+  to {height: var(--header-height-total)}
+}
+
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {

@@ -21,23 +21,27 @@ const FillDetails: React.FC<{
       >
         Fill in your details.
       </SomaCard.Head>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div id="contactFormInput" className="grid gap-6 md:grid-cols-2">
         {contactFormFields.map((field) => (
           <InputField
             key={field.key}
+            name={field.key}
             id={field.id}
             label={field.label}
+            hook={field.state}
             setHook={field.setState}
-            type={field.type}        
+            type={field.type}
+            regex={field.regex}
+            invalidRegexMsg={field.invalidRegexMsg}
           />
         ))}
+        <SomaButton.SubmitForm
+          className="flex justify-center md:col-span-2"
+        >
+          <p className="text-center text-md">Submit Form</p>
+        </SomaButton.SubmitForm>
       </div>
     </div>
-    <SomaButton.SubmitForm
-      className="flex justify-center"
-    >
-      <p className="text-center text-md">Submit Form</p>
-    </SomaButton.SubmitForm>
   </>);
 }
 

@@ -25,9 +25,24 @@ const SubmitForm: React.FC<{
   children,
   className = "",
 }) => {
+  const name = 5;
+
+  const onKeyDownHandler: any = (e: any) => {
+    if(e.key === "Enter"){
+      console.log("form submitted");
+    } 
+    else if (e.key === "Backspace"){
+      document.getElementById("contactFormInput")?.querySelector<HTMLInputElement>("[name='"+(name-1)+"']")?.focus();
+    }
+  }
+
   return(<>
-    <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-grey-200"}>
-      <button className="w-full py-2 ">
+    <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-grey-200 focus:bg-grey-200"}>
+      <button 
+        className="w-full py-2 "
+        name={name.toString()}
+        onKeyDown={onKeyDownHandler}
+      >
         <span className="text-black text-md font-normal">
           {children}
         </span>

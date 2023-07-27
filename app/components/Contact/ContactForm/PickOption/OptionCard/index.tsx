@@ -23,9 +23,11 @@ const OptionCard: React.FC<{
     :
       'bg-white hover:border-orange hover:fill-orange'
     );
+
+    const hoverClass = (svg ? '' : 'hover:underline decoration-orange underline-offset-2 decoration-1');
   return (<>
     <div 
-      className={className+" flex-col flex-1 justify-items-center border-grey border shadow-md "+selectedClass}
+      className={hoverClass+" "+className+" flex-col flex-1 justify-items-center border-grey border shadow-md "+selectedClass}
       onClick={() => handleOptionClick(title)}  
     >
       {(svg ?

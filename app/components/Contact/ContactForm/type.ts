@@ -3,6 +3,7 @@ type input = {
   id: string,
   label: string,
   regex?: string,
+  invalidRegexMsg?: string,
   state: any,
   setState: React.Dispatch<React.SetStateAction<any>>
   type: "input" | "textarea"

@@ -25,6 +25,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth'>
+      <head>
+      </head>
       <body className={outfit.className}>
         <div className="flex flex-col min-h-screen">
           <Header />
