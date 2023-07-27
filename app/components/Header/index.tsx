@@ -36,12 +36,10 @@ const Header: React.FC = () => {
         <a className="hover:text-orange" href="#contact">Contact</a>
       </div>
       <div className="flex sm:hidden ">
-        <div className="">
-          <Burger 
-            burgerOpen={burgerOpen} 
-            setBurgerOpen={setBurgerOpen}
-          />
-        </div>
+        <Burger 
+          burgerOpen={burgerOpen} 
+          setBurgerOpen={setBurgerOpen}
+        />
       </div>
     </nav>
   );
