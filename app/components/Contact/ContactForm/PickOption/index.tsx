@@ -21,21 +21,19 @@ const PickOption: React.FC<{
       >
         Pick an option.
       </SomaCard.Head>
-      <div className="flex-col">
-        <div className="flex w-full space-x-6 pb-6">
-          {products.map(product => (
-            <OptionCard
-              className="pb-2"
-              key={product.key}
-              title={product.title}
-              svg={product.svg}
-              option={option}
-              setOption={setOption} 
-            />
-          ))}
-        </div>
+      <div className="pb-6 grid gap-6 grid-cols-2 md:grid-cols-4">
+        {products.map(product => (
+          <OptionCard
+            className="pb-2"
+            key={product.key}
+            title={product.title}
+            svg={product.svg}
+            option={option}
+            setOption={setOption} 
+          />
+        ))}
         <OptionCard
-          className="py-2"
+          className="py-2 col-span-2 md:col-span-4"
             title="Chat"
             displayText="Just to chat"
             option={option}

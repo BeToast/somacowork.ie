@@ -30,7 +30,7 @@ const OptionCard: React.FC<{
     >
       {(svg ?
         <div className="flex justify-center items-center">
-          <div className="w-1/2 p-2">
+          <div className="w-2/5 max-w-[100px] p-2">
             {svg}
           </div>
         </div>

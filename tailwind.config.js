@@ -6,13 +6,14 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    // extend: {
-    //   backgroundImage: {
-    //     'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-    //     'gradient-conic':
-    //       'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-    //   },
-    // },
+    screens: {
+      'xs': '440px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       spacing: {
         '69': '26rem',
@@ -26,7 +27,7 @@ module.exports = {
         dark: '#cc4823',
       },
       grey: {
-        100: '#6c757d',
+        100: '#dee2e6',
         200: '#adb5bd',
         300: '#6c757d',
         text: '#343a40',

@@ -26,8 +26,8 @@ const SubmitForm: React.FC<{
   className = "",
 }) => {
   return(<>
-    <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-orange-dark"}>
-      <button className="px-2 py-1 ">
+    <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-grey-200"}>
+      <button className="w-full py-2 ">
         <span className="text-black text-md font-normal">
           {children}
         </span>

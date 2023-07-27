@@ -14,8 +14,8 @@ const FeaturesAmenities: React.FC<{
       id="amenities"
       className="flex"
     >
-      <div className="flex flex-col space-y-8 sm:w-3/5 pl-12 py-14"> {/* hardcoded padding!!! */}
-        <div className="w-4/5">
+      <div className="flex flex-col space-y-8 sm:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
+        <div className="w-full xs:w-4/5">
           <SomaCard.Frame className="pt-4">
             <SomaCard.Head
               size="text-5xl"

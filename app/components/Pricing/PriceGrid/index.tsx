@@ -29,7 +29,7 @@ const PriceCard: React.FC<{
   return(<>
     <div className='flex flex-col'>
       <div className='flex flex-1 w-full justify-center bg-white'>
-        <SomaCard.Frame className='' padding='px-10 pt-8 pb-8'>
+        <SomaCard.Frame className='' padding='px-4 sm:px-10 py-8'>
           <SomaCard.Head
             size="text-2xl"
             align="text-left"
@@ -65,29 +65,3 @@ const PriceCard: React.FC<{
 }
 
 export default PriceGrid;
-
-
-const temp: React.FC<{
-  
-}> = ({
-  
-}) => {
-  return(<>
-    <div className="flex-1 grid">
-      <small className="justify-self-end leading-8 text-base text-neutral-800 dark:text-neutral-300">
-        peicw
-      </small>
-    </div>
-    <div className="grid flex-0 first:flex-auto pr-1 pl-1">
-      <div className="justify-self-end">
-        <strong> epicw</strong>
-      </div>
-    </div>
-    <div className="flex-1 even:flex-auto grid">
-      <small className="justify-self-start self-end text-base text-neutral-500 dark:text-neutral-300">
-        /month + VAT
-      </small>
-    </div>
-  </>);
-}
-

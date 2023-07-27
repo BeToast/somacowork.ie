@@ -22,7 +22,7 @@ const Pricing: React.FC<{
           Pricing and Membership
         </SomaCard.Head>
       </div>
-      <div className="w-full px-6">
+      <div className="w-full px-4 sm:px-6">
         {/* ACTUAL GRID */}
         <PriceGrid />
       </div>

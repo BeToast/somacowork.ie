@@ -19,7 +19,7 @@ const InputField: React.FC<{
 }) => {
   return(<>
     <label
-      htmlFor={label}
+      htmlFor={id}
       className={(type == "input" ? "" : "md:col-span-2") +" relative block border border-grey shadow-sm focus-within:border-orange focus-within:border-1 focus-within:ring-orange"}
     >
       {(type == "input" ?

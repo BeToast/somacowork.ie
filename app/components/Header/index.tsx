@@ -2,10 +2,10 @@ import { logo } from "static/svg";
 
 const Header: React.FC = () => {
   return (
-    <nav className="soma-header-padding sticky top-0 flex w-full bg-white items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg">
+    <nav className="soma-header-padding sticky top-0 flex w-full bg-white items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row">
       
       {/* LEFT */}
-      <div className="flexitems-center space-x-4">
+      <div className="flex items-center space-x-4">
         <a className="" href="#">
           <div className="soma-header-height">
             {logo.textlogo}

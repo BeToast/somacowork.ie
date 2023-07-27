@@ -17,6 +17,7 @@ const Home: React.FC<{
         src={somaImage.moycullenBuildingBanner}
         className="w-full h-full shadow-md"
         alt={""}
+        priority={true}
       />
     </div>
     <div>

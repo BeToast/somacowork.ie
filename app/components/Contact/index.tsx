@@ -9,9 +9,10 @@ const Contact: React.FC<{
   return(<>
     <div 
       id="contact"
-      className="flex flex-col p-6 bg-white"
+      className="flex flex-col px-2 py-6 sm:p-6 bg-white"
     >
       <SomaCard.Head
+        className="pb-6"
         size= "text-5xl"
         align= "text-center"
         txtColor= "text-orange"
