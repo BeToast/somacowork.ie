@@ -8,13 +8,15 @@ const Contact: React.FC<{
   className = "",
 }) => {
   return(<>
-    <div className={className+" shadow-xl border-2 border-white bg-orange hover:bg-orange-dark"}>
-      <button className="px-2 py-1">
-        <span className="text-white text-xl font-normal">
-          {children}
-        </span>
-      </button>
-    </div>
+    <a href="#contact">
+      <div className={className+" shadow-xl border-2 border-white bg-orange hover:bg-orange-dark"}>
+        <button className="px-2 py-1">
+          <span className="text-white text-xl font-normal">
+            {children}
+          </span>
+        </button>
+      </div>
+    </a>
   </>);
 }
 
