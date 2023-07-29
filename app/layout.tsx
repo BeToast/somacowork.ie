@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import FooterCenter from 'components/Footer/FooterCenter';
 
 //firebase
 import { getFirebaseApp } from './firebase'
@@ -32,6 +33,9 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <div className='block sm:hidden'>
+            <FooterCenter />
+          </div>
         </div>
       </body>
     </html>

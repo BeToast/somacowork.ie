@@ -12,7 +12,7 @@ const Pricing: React.FC<{
       id="pricing"
       className="flex flex-col justify-center bg-grey py-6"
     >
-      <div className="w-full">
+      <div className="w-full py-4">
         <SomaCard.Head
           size="text-4xl"
           align="text-center"

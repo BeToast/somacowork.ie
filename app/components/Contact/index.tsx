@@ -12,7 +12,8 @@ const Contact: React.FC<{
       className="flex flex-col px-2 py-6 sm:p-6 bg-white"
     >
       <SomaCard.Head
-        className="pb-6"
+        padding=""
+        className="py-6"
         size= "text-5xl"
         align= "text-center"
         txtColor= "text-orange"

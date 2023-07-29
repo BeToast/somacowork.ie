@@ -19,9 +19,9 @@ const PickOption: React.FC<{
         align="text-left"
         txtColor="text-orange"
       >
-        Pick an option.
+        I am interested in...
       </SomaCard.Head>
-      <div className="pb-6 grid gap-6 grid-cols-2 md:grid-cols-4">
+      <div className="grid gap-6 grid-cols-2 md:grid-cols-4">
         {products.map(product => (
           <OptionCard
             className="pb-2"
@@ -32,13 +32,13 @@ const PickOption: React.FC<{
             setOption={setOption} 
           />
         ))}
-        <OptionCard
+        {/* <OptionCard
           className="py-2 col-span-2 md:col-span-4"
             title="Chat"
             displayText="Just to chat"
             option={option}
             setOption={setOption} 
-          />
+          /> */}
       </div>
     </div>
   </>);

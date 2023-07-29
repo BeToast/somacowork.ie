@@ -26,6 +26,6 @@
       "image/*": ["./app/image/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote", "app/components/Footer/static.jss"],
   "exclude": ["node_modules"]
 }
