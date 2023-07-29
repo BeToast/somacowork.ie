@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
   return (
     <nav
-      className={(burgerOpen ? "soma-header-expand" : "soma-header-retract")+" soma-header-y soma-header-padding overflow-y-hidden sticky top-0 flex w-full bg-white items-start sm:items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row"}
+      className={(burgerOpen ? "soma-header-expand" : "sm:soma-header-retract")+" soma-header-y soma-header-padding overflow-y-hidden sticky top-0 flex w-full bg-white items-start sm:items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row"}
     >
       
       {/* LEFT */}

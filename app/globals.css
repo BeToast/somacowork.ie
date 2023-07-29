@@ -11,9 +11,9 @@
 }
 
 :target { scroll-margin-top: calc(var(--header-height-total) - 2px) } 
-@media(max-width: 640px) { 
+/* @media(max-width: 640px) { 
   :target { scroll-margin-top: calc(var(--header-height-expanded) - 2px) }
-}
+} */
 
 .soma-header-height{
   height: var(--header-height);

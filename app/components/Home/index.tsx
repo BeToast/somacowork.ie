@@ -1,3 +1,4 @@
+import { office } from "static/image";
 import somaImage from "static/image";
 import SomaCard from "../SomaCard";
 import Image from "next/image";
@@ -11,7 +12,7 @@ const Home: React.FC<{
     {/* BIG IMAGE */}
     <div 
       id="home"
-      className=""
+      className="h-96 overflow-clip"
     >
       <Image 
         src={somaImage.moycullenBuildingBanner}
@@ -19,6 +20,14 @@ const Home: React.FC<{
         alt={""}
         priority={true}
       />
+      {/* <div className="-mt-[0px]">
+        <Image 
+          src={office.a}
+          className="w-full shadow-md"
+          alt={""}
+          priority={true}
+        />
+      </div> */}
     </div>
     <div>
       <SomaCard.Frame>
