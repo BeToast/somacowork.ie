@@ -12,22 +12,22 @@ const Home: React.FC<{
     {/* BIG IMAGE */}
     <div 
       id="home"
-      className="h-96 overflow-clip"
+      className="overflow-clip"
     >
-      <Image 
+      {/* <Image 
         src={somaImage.moycullenBuildingBanner}
         className="w-full h-full shadow-md"
         alt={""}
         priority={true}
-      />
-      {/* <div className="-mt-[0px]">
+      /> */}
+      <div className="-mt-[0px]">
         <Image 
-          src={office.a}
+          src={somaImage.cup}
           className="w-full shadow-md"
           alt={""}
           priority={true}
         />
-      </div> */}
+      </div>
     </div>
     <div>
       <SomaCard.Frame>

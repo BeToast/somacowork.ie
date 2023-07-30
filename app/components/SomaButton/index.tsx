@@ -9,7 +9,7 @@ const Contact: React.FC<{
 }) => {
   return(<>
     <a href="#contact">
-      <div className={className+" shadow-xl border-2 border-white bg-orange hover:bg-orange-dark"}>
+      <div className={className+" w-28 text-center shadow-xl border-2 border-white bg-transparent hover:bg-orange-dark"}>
         <button className="px-2 py-1">
           <span className="text-white text-xl font-normal">
             {children}
@@ -39,19 +39,37 @@ const SubmitForm: React.FC<{
   }
 
   return(<>
-    <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-grey-200 focus:bg-grey-200"}>
+    <div className={className+"  w-28  text-center shadow-xl border-2 border-black bg-transparent hover:bg-orange focus:bg-grey-200"}>
       <button 
         className="w-full py-2 "
         name={name.toString()}
         onKeyDown={onKeyDownHandler}
       >
-        <span className="text-black text-md font-normal">
+        <span className="text-black text-xl font-normal px-2">
           {children}
         </span>
       </button>
     </div>
   </>);
 }
+
+// const SubmitForm: React.FC<{
+//   children: React.ReactNode,
+//   className?: string,
+// }> = ({
+//   children,
+//   className = "",
+// }) => {
+//   return(<>
+//     <div className={className+" shadow-xl border border-black bg-grey-100 hover:bg-grey-200"}>
+//       <button className="w-full py-2 ">
+//         <span className="text-black text-md font-normal">
+//           {children}
+//         </span>
+//       </button>
+//     </div>
+//   </>);
+// }
 
 const SomaButton = { Contact, SubmitForm }
 export default SomaButton;

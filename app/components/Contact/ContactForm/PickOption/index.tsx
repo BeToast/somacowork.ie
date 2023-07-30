@@ -14,7 +14,7 @@ const PickOption: React.FC<{
   return(<>
     <div className={""+className}>
       <SomaCard.Head
-        padding="pb-6"
+        padding="pb-6 pt-4"
         size="text-2xl"
         align="text-left"
         txtColor="text-orange"

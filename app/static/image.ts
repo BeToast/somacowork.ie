@@ -1,12 +1,14 @@
-import backgroundTwoSides from "public/background-two-sides.webp";
+import bgTwoSides from "public/bg-two-sides.webp";
+import bgTwoSidesMobile from "public/bg-two-sides-mobile.webp";
 import handsComputer from "public/hands_computer.webp";
 import moycullenBuilding from "public/moycullen_building.webp";
 import moycullenBuildingBanner from "public/moycullen_building_banner.webp";
 import moycullenCar from "public/moycullen_car.webp";
 import plant from "public/plant.webp";
+import cup from "public/somacup.webp";
 
 
-const somaImage = { backgroundTwoSides, handsComputer, moycullenBuilding, moycullenBuildingBanner, moycullenCar, plant, };
+const somaImage = { bgTwoSides, bgTwoSidesMobile, handsComputer, moycullenBuilding, moycullenBuildingBanner, moycullenCar, plant, cup};
 export default somaImage;
 
 import a from "public/1.jpg";

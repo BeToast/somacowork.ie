@@ -33,7 +33,7 @@ module.exports = {
         text: '#343a40',
         DEFAULT: '#343a40',
       },
-      white: '#f4f4f4',
+      white: '#FFFFFF',
       black: '#000000',
     }
   },

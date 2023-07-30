@@ -35,12 +35,14 @@ const FillDetails: React.FC<{
             invalidRegexMsg={field.invalidRegexMsg}
           />
         ))}
-        <SomaButton.SubmitForm
-          className="flex justify-center md:col-span-2"
-        >
-          <p className="text-center text-md">Submit Form</p>
-        </SomaButton.SubmitForm>
       </div>
+    </div>
+    <div className="flex justify-center">
+      <SomaButton.SubmitForm
+        className="flex justify-center"
+      >
+        submit
+      </SomaButton.SubmitForm>
     </div>
   </>);
 }

@@ -77,7 +77,7 @@ const ContactForm: React.FC<{
   const formObj = {option, firstname, surname, email, phone};
 
   return(<>
-    <div className="flex flex-col px-2 sm:px-6 space-y-6">
+    <div className="flex flex-col px-2 sm:px-6 space-y-10">
       <PickOption
         option={option}
         setOption={setOption} 
