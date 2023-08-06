@@ -1,6 +1,7 @@
 import bgTwoSides from "public/bg-two-sides.webp";
 import bgTwoSidesMobile from "public/bg-two-sides-mobile.webp";
 import handsComputer from "public/hands_computer.webp";
+import evanHands from "public/evan_hands.webp";
 import moycullenBuilding from "public/moycullen_building.webp";
 import moycullenBuildingBanner from "public/moycullen_building_banner.webp";
 import moycullenCar from "public/moycullen_car.webp";
@@ -8,21 +9,14 @@ import plant from "public/plant.webp";
 import cup from "public/somacup.webp";
 
 
-const somaImage = { bgTwoSides, bgTwoSidesMobile, handsComputer, moycullenBuilding, moycullenBuildingBanner, moycullenCar, plant, cup};
+const somaImage = { bgTwoSides, bgTwoSidesMobile, handsComputer, evanHands, moycullenBuilding, moycullenBuildingBanner, moycullenCar, plant, cup};
 export default somaImage;
 
-import a from "public/1.jpg";
-import b from "public/2.jpg";
-import c from "public/3.jpg";
-import d from "public/4.jpg";
-import e from "public/5.png";
-import f from "public/6.jpg";
-import g from "public/7.jpg";
-import h from "public/8.png";
-import i from "public/9.jpg";
-import j from "public/10.jpg";
-import k from "public/11.jpg";
-import l from "public/12.png";
-import m from "public/13.jpg";
+import a from "public/gallery/a.webp";
+import b from "public/gallery/b.webp";
+import c from "public/gallery/c.webp";
+import d from "public/gallery/d.webp";
+import e from "public/gallery/e.webp";
+import f from "public/gallery/f.webp";
 
-export const office = {a, b, c, d, e, f, g, h, i, j, k, l, m}
+export const gallery = [a, b, c, d, e, f];
