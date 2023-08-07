@@ -8,6 +8,7 @@ const MobileMenu: React.FC<{
       <a onClick={() => (setBurgerOpen(false))} className="hover:text-orange" href="#about">About</a>
       <a onClick={() => (setBurgerOpen(false))} className="hover:text-orange" href="#amenities">Amenities</a>
       <a onClick={() => (setBurgerOpen(false))} className="hover:text-orange" href="#pricing">Pricing</a>
+      <a onClick={() => (setBurgerOpen(false))} className="hover:text-orange" href="#gallery">Gallery</a>
       <a onClick={() => (setBurgerOpen(false))} className="hover:text-orange" href="#contact">Contact</a>
       </div>
   </>);

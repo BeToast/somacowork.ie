@@ -4,22 +4,18 @@ import About from "components/About";
 import DiverseCareers from "components/DiverseCareers";
 import Amenities from "components/Amenities";
 import Pricing from "components/Pricing";
-// import Gallery from "components/Gallery";
+import Gallery from "components/Gallery";
 import Contact from "components/Contact";
 
 //reusable imports
 import SomaButton from "components/SomaButton";
 import SomaQuote from "components/SomaQuote";
-//dynamic imports
-// import dynamic from "next/dynamic";
-// const Soma = dynamic(() => import("./compos/Macro/SomaButton"), {ssr: false});
-
 
 export default function Page() {
   return (
-    <main className="flex flex-col overflow-hidden">
+    <main className="flex flex-col overflow-hidden snap-y snap-mandatory child:snap-start">
 
-      <Home />
+      <Home className=""/>
 
       <div className="bg-orange">
         <SomaQuote txtColor="text-white">
@@ -47,7 +43,7 @@ export default function Page() {
 
       <Pricing />  
 
-      {/* <Gallery /> */}
+      <Gallery />
 
       <Contact />
     </main>

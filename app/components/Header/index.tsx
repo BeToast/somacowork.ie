@@ -11,7 +11,8 @@ const Header: React.FC = () => {
 
   return (
     <nav
-      className={(burgerOpen ? "soma-header-expand" : "sm:soma-header-retract")+" soma-header-y soma-header-padding overflow-y-hidden sticky top-0 flex w-full bg-white items-start sm:items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row"}
+      id="nav"
+      className={(burgerOpen ? "soma-header-expand" : "")+" soma-header-y soma-header-padding overflow-y-hidden sticky top-0 flex w-full bg-white items-start sm:items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row"}
     >
       
       {/* LEFT */}
@@ -33,6 +34,7 @@ const Header: React.FC = () => {
         <a className="hover:text-orange" href="#about">About</a>
         <a className="hover:text-orange" href="#amenities">Amenities</a>
         <a className="hover:text-orange" href="#pricing">Pricing</a>
+        <a className="hover:text-orange" href="#gallery">Gallery</a>
         <a className="hover:text-orange" href="#contact">Contact</a>
       </div>
       <div className="flex sm:hidden ">

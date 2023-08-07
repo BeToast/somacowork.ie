@@ -7,7 +7,7 @@
   --header-height: 48px;
   --header-padding: 24px;
   --header-height-total: calc(calc(var(--header-height) + calc(2*var(--header-padding))));
-  --header-height-expanded: 304px;
+  --header-height-expanded: 356px;
 }
 
 :target { scroll-margin-top: calc(var(--header-height-total) - 2px) } 

@@ -1,31 +1,25 @@
-import { office } from "static/image";
 import somaImage from "static/image";
 import SomaCard from "../SomaCard";
 import Image from "next/image";
 
 const Home: React.FC<{
-  
+  className?: string,
 }> = ({
-  
+  className = "",
 }) => {
   return(<>
     {/* BIG IMAGE */}
     <div 
       id="home"
-      className="overflow-clip"
+      className={className+" overflow-clip"}
     >
-      {/* <Image 
-        src={somaImage.moycullenBuildingBanner}
-        className="w-full h-full shadow-md"
-        alt={""}
-        priority={true}
-      /> */}
-      <div className="-mt-[0px]">
+      <div className="relative min-w-[768px] flex justify-center left-1/2 -translate-x-1/2">
         <Image 
           src={somaImage.cup}
           className="w-full shadow-md"
           alt={""}
           priority={true}
+          placeholder = 'blur'
         />
       </div>
     </div>

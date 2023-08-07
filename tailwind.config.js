@@ -5,6 +5,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // plugins: [
+  //   function ({ addVariant }) {
+  //     addVariant('child', '& > *');
+  //     addVariant('child-hover', '& > *:hover');
+  //   },
+  // ],
   theme: {
     screens: {
       'xs': '440px',

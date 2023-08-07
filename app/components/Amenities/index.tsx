@@ -1,6 +1,6 @@
 import SomaCard from "components/SomaCard";
 import LogoCard from "components/LogoCard";
-import somaImage, { office } from "static/image";
+import somaImage from "static/image";
 
 import Image from "next/image";
 
@@ -39,7 +39,7 @@ const FeaturesAmenities: React.FC<{
         <div className="h-full overflow-clip">
           <Image 
             // src={somaImage.handsComputer}
-            src={office.i}
+            src={somaImage.evanHands}
             className="object-cover object-left h-full"
             alt={""}
           />

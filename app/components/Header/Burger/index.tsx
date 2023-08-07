@@ -10,7 +10,7 @@ const Burger: React.FC<{
   setBurgerOpen, 
 }) => {
 
-
+  // document.getElementById("nav")?.classList.add("soma-header-retract");
   return(<>
     <Hamburger 
       color="#343a40"

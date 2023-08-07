@@ -12,7 +12,7 @@ const DiverseCareers: React.FC<{
   return(<>
     <div 
       id="diverseCareers"
-      className="relative"
+      className="relative min-h-[26rem]"
     >
       <div className="absolute inset-0 -z-10 overflow-clip">
         <div className="hidden md:block">
