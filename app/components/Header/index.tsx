@@ -10,8 +10,6 @@ const Header: React.FC = () => {
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
   const [slideClose, setSlideClose] = useState<boolean>(false);
 
-  // (burgerOpen ? null : (sideClose ? setSlideClose(false) : null));
-  console.log(slideClose)
   let varClassName = () => {
     if(burgerOpen){
       return "soma-header-expand";

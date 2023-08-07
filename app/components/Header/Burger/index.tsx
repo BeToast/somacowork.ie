@@ -16,7 +16,7 @@ const Burger: React.FC<{
       color="#343a40"
       toggled={burgerOpen} 
       toggle={setBurgerOpen}
-      onToggle={toggled => (toggled ? console.log("true") : setSlideClose(true))}
+      onToggle={toggled => (toggled ? null : setSlideClose(true))}
     />
   </>);
 }
