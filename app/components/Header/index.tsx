@@ -8,11 +8,24 @@ import MobileMenu from "./MobileMenu";
 const Header: React.FC = () => {
 
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
+  const [slideClose, setSlideClose] = useState<boolean>(false);
+
+  // (burgerOpen ? null : (sideClose ? setSlideClose(false) : null));
+  console.log(slideClose)
+  let varClassName = () => {
+    if(burgerOpen){
+      return "soma-header-expand";
+    } else if(slideClose){
+      setTimeout(() => setSlideClose(false), 300);
+      return("soma-header-retract");
+    }
+    return null;
+  };
 
   return (
     <nav
       id="nav"
-      className={(burgerOpen ? "soma-header-expand" : "")+" soma-header-y soma-header-padding overflow-y-hidden sticky top-0 flex w-full bg-white items-start sm:items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row"}
+      className={varClassName()+" soma-header-y soma-header-padding overflow-y-hidden sticky top-0 flex w-full bg-white items-start sm:items-center justify-between px-8 font-light text-lg text-neutral-800 shadow-lg z-20 flex-row-reverse sm:flex-row"}
     >
       
       {/* LEFT */}
@@ -41,6 +54,7 @@ const Header: React.FC = () => {
         <Burger 
           burgerOpen={burgerOpen} 
           setBurgerOpen={setBurgerOpen}
+          setSlideClose={setSlideClose}
         />
       </div>
     </nav>
