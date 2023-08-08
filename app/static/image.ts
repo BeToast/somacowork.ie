@@ -7,9 +7,10 @@ import moycullenBuildingBanner from "public/moycullen_building_banner.webp";
 import moycullenCar from "public/moycullen_car.webp";
 import plant from "public/plant.webp";
 import cup from "public/somacup.webp";
+import cupTall from "public/somacupTall.webp";
 
 
-const somaImage = { bgTwoSides, bgTwoSidesMobile, handsComputer, evanHands, moycullenBuilding, moycullenBuildingBanner, moycullenCar, plant, cup};
+const somaImage = { bgTwoSides, bgTwoSidesMobile, handsComputer, evanHands, moycullenBuilding, moycullenBuildingBanner, moycullenCar, plant, cup, cupTall};
 export default somaImage;
 
 import a from "public/gallery/a.webp";

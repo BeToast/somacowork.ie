@@ -39,7 +39,7 @@ const FillDetails: React.FC<{
     </div>
     <div className="flex justify-center">
       <SomaButton.SubmitForm
-        className="flex justify-center"
+        className="flex justify-center mb-[16px]"
       >
         submit
       </SomaButton.SubmitForm>

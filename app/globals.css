@@ -27,6 +27,11 @@
   height: var(--header-height-total);
 }
 
+.home-y {
+  height: calc(100vh - var(--header-height-total))
+}
+
+
 .soma-header-expand {
   animation-name: expand;
   animation-duration: .6s;

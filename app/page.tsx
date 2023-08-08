@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <main className="flex flex-col overflow-hidden snap-y snap-mandatory child:snap-start">
 
-      <Home className=""/>
+      <Home className="home-y"/>
 
       <div className="bg-orange">
         <SomaQuote txtColor="text-white">
@@ -46,6 +46,8 @@ export default function Page() {
       <Gallery />
 
       <Contact />
+      {/* <iframe src="https://connectedhubs.ie/hubs/embed/143?type=desks" title="Soma Coworking Desks" width="100%" height="800px" frameBorder="0" ></iframe> */}
+
     </main>
   );
 }
