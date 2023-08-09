@@ -7,7 +7,6 @@ import { input } from "./type";
 import { useState } from "react";
 
 
-
 const ContactForm: React.FC<{
   
 }> = ({
@@ -17,12 +16,14 @@ const ContactForm: React.FC<{
 
   const [option, setOption] = useState<string>("noneSelected");
 
-  const [firstname, setFirstname] = useState<string | null>(null);
-  const [surname, setSurname] = useState<string | null>(null);
-  const [email, setEmail] = useState<string | null>(null);
-  const [phone, setPhone] = useState<string | null>(null);
+  const [firstname, setFirstname] = useState<string>("");
+  const [surname, setSurname] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
 
   const [message, setMessage] = useState<string>("");
+
+  const [formSent, setFormSent] = useState<boolean>(false);
 
   const contactFormFields:input[] = [
     {
@@ -71,10 +72,7 @@ const ContactForm: React.FC<{
     },
   ];
   
-  
-
-
-  const formObj = {option, firstname, surname, email, phone};
+  const formObj = {option, firstname, surname, email, phone, message};
 
   return(<>
     <div className="flex flex-col px-2 sm:px-6 space-y-10">
@@ -85,6 +83,9 @@ const ContactForm: React.FC<{
 
       <FillDetails
         contactFormFields={contactFormFields}
+        formObj={formObj}
+        formSent={formSent}
+        setFormSent={setFormSent}
       />
     </div>
   </>);

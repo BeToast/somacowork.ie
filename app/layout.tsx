@@ -5,8 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer/index';
 
 //firebase
-import { getFirebaseApp } from './firebase'
-const app = getFirebaseApp();
+// import { getFirebaseApp } from './firebase'
+// const app = getFirebaseApp();
 
 //font
 import { Outfit } from 'next/font/google'

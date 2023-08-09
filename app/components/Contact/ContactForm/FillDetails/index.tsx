@@ -2,14 +2,32 @@ import SomaCard from "components/SomaCard";
 import SomaButton from "components/SomaButton";
 import InputField from "./InputField";
 import { input } from "../type";
+import sendBrevoEmail from "../sendBrevoEmail";
 
 const FillDetails: React.FC<{
   className?: string,
   contactFormFields: input[],
+  formObj: {
+    option: string,
+    firstname: string,
+    surname: string,
+    email: string,
+    phone: string,
+    message: string,
+  },
+  formSent:  boolean,
+  setFormSent: React.Dispatch<React.SetStateAction<boolean>>,
 }> = ({
   className,
   contactFormFields,
+  formObj,
+  formSent,
+  setFormSent,
 }) => {
+
+  const submitHandler = ()=>{
+    sendBrevoEmail(formObj)
+  }
 
   return(<>
     <div>
@@ -40,6 +58,7 @@ const FillDetails: React.FC<{
     <div className="flex justify-center">
       <SomaButton.SubmitForm
         className="flex justify-center mb-[16px]"
+        onClick={submitHandler}
       >
         submit
       </SomaButton.SubmitForm>

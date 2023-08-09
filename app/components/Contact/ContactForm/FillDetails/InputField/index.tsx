@@ -34,7 +34,8 @@ const InputField: React.FC<{
     undefined
   );
 
-  const onBlurHandler = (e: React.FormEvent<HTMLInputElement>) => {
+  const onBlurHandler = (e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setHook(e.currentTarget.value);
     if(regexExp)
       setValidRegex(regexExp.test(e.currentTarget.value));
       console.log(validRegex)
@@ -81,9 +82,9 @@ const InputField: React.FC<{
             type="text"
             name={name.toString()}
             id={id}
-            className="w-full p-2 peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+            className="w-full p-2 peer border-none font-light bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
             placeholder={placeholder}
-            onBlur={( regexExp ? onBlurHandler : undefined )}
+            onBlur={onBlurHandler}
             onKeyDown={onKeyDownHandler}
           />
           <span
@@ -100,7 +101,9 @@ const InputField: React.FC<{
             name={name.toString()}
             id={id}
             className="w-full p-2 peer border-none font-light bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+            rows={4}
             placeholder={label}
+            onBlur={onBlurHandler}
             onKeyDown={onKeyDownHandler}
           />
           <span
