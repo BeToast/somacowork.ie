@@ -1,4 +1,4 @@
-import { products } from "@/app/static/pricing";
+import { products } from "static/pricing";
 import SomaCard from "components/SomaCard";
 import OptionCard from "./OptionCard";
 
@@ -21,7 +21,7 @@ const PickOption: React.FC<{
       >
         I am interested in...
       </SomaCard.Head>
-      <div className="grid gap-6 grid-cols-2 md:grid-cols-4">
+      <div className="grid gap-4 sm:gap-6 grid-cols-2 md:grid-cols-4">
         {products.map(product => (
           <OptionCard
             className="pb-2"

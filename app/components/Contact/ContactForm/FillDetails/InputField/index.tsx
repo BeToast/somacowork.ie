@@ -12,7 +12,9 @@ const InputField: React.FC<{
   setHook: React.Dispatch<React.SetStateAction<string | null>>,
   regex?: string,
   invalidRegexMsg?: string,
-  type?: "input" | "textarea"
+  type?: "input" | "textarea",
+  valid?: boolean,
+  setValid?: React.Dispatch<React.SetStateAction<boolean>>,
 }> = ({
   className,
   id,
@@ -24,22 +26,20 @@ const InputField: React.FC<{
   regex = undefined,
   invalidRegexMsg = undefined,
   type,
+  valid = undefined,
+  setValid = undefined,
 }) => {
   const [validRegex, setValidRegex] = useState<boolean>(true);
 
-  const regexExp = (regex
-    ?
-    new RegExp(regex)
-    :
-    undefined
-  );
+  const regexExp = (regex ? new RegExp(regex) : undefined);
 
   const onBlurHandler = (e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setHook(e.currentTarget.value);
-    if(regexExp)
-      setValidRegex(regexExp.test(e.currentTarget.value));
-      console.log(validRegex)
-
+    if(regexExp){
+      let isValid = regexExp.test(e.currentTarget.value);
+      setValidRegex(isValid);
+      (setValid ? setValid(isValid) : null);
+    }
   }
 
   const onKeyDownHandler: any = (e: any) => {
@@ -90,11 +90,7 @@ const InputField: React.FC<{
           <span
             className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs peer-placeholder-shown:text-grey-300 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-black "
           >
-            {(validRegex ? 
-                label 
-              :
-                invalidRegexMsg
-            )}
+            {( validRegex ? label : invalidRegexMsg )}
           </span>
         </>) : (<>
           <textarea

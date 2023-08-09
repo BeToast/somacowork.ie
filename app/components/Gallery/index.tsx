@@ -10,7 +10,7 @@ const Gallery: React.FC<{
   return(<>
     <div 
       id="gallery"
-      className="flex flex-col p-12 bg-orange"
+      className="flex flex-col px-4 sm:px-12 py-12 bg-orange"
     >
       <SomaCard.Head
         size= "text-5xl"

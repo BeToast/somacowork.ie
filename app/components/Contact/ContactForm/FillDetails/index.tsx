@@ -17,16 +17,37 @@ const FillDetails: React.FC<{
   },
   formSent:  boolean,
   setFormSent: React.Dispatch<React.SetStateAction<boolean>>,
+  setFormSubmittedModalOpen:  React.Dispatch<React.SetStateAction<boolean>>,
+  submitAgain: boolean,
 }> = ({
   className,
   contactFormFields,
   formObj,
   formSent,
   setFormSent,
+  setFormSubmittedModalOpen,
+  submitAgain,
 }) => {
 
   const submitHandler = ()=>{
-    sendBrevoEmail(formObj)
+    var allInputsValid = true;
+    contactFormFields.forEach(field => {
+      // console.log(allInputsValid);
+      console.log(field.id+" is "+field.valid);
+      if(field.valid === undefined) return;
+      if(field.valid === false){
+        allInputsValid = false;
+        //indicate field is not valid and focus it
+        let label = document.getElementById("contactFormInput")?.querySelector<HTMLInputElement>("[for='"+field.id+"']");
+        label?.classList.add('animate-pulse');
+        setTimeout(() => (label?.classList.remove('animate-pulse')), 3800);
+      }
+    });
+    if(allInputsValid) {
+      setFormSubmittedModalOpen(true);
+      setFormSent(true);
+      // sendBrevoEmail(formObj);   
+    }
   }
 
   return(<>
@@ -51,16 +72,18 @@ const FillDetails: React.FC<{
             type={field.type}
             regex={field.regex}
             invalidRegexMsg={field.invalidRegexMsg}
+            valid={field.valid}
+            setValid={field.setValid}
           />
         ))}
       </div>
     </div>
     <div className="flex justify-center">
       <SomaButton.SubmitForm
-        className="flex justify-center mb-[16px]"
+        className={(submitAgain ? 'w-40' : '')+" flex justify-center mb-[16px]"}
         onClick={submitHandler}
       >
-        submit
+        {(submitAgain ? 'submit again' : 'submit')}
       </SomaButton.SubmitForm>
     </div>
   </>);

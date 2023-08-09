@@ -28,7 +28,10 @@
 }
 
 .home-y {
-  height: calc(100vh - var(--header-height-total))
+  height: calc(100vh - var(--header-height-total));
+  @media(max-width: 320px) { 
+    height: auto;
+  }
 }
 
 
@@ -77,4 +80,16 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
