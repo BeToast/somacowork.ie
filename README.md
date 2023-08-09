@@ -5,6 +5,7 @@ This website uses the following technologies:
 - Tailwindcss
 - Next.js
 - Firebase Hosting
+- Brevo for SMTP server
 
 *developed by Blake Preston*
 
