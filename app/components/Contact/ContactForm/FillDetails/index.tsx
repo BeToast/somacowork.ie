@@ -2,7 +2,7 @@ import SomaCard from "components/SomaCard";
 import SomaButton from "components/SomaButton";
 import InputField from "./InputField";
 import { input } from "../type";
-import sendBrevoEmail from "../sendBrevoEmail";
+import sendBrevoEmail from "private/sendBrevoEmail";
 
 const FillDetails: React.FC<{
   className?: string,

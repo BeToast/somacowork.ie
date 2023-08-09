@@ -1,0 +1,3 @@
+[submodule "private.somacowork.ie"]
+	path = private.somacowork.ie
+	url = git@github.com:BeToast/private.somacowork.ie.git
