@@ -11,6 +11,13 @@ import Contact from "components/Contact";
 import SomaButton from "components/SomaButton";
 import SomaQuote from "components/SomaQuote";
 
+// scroll  handler
+import dynamic from 'next/dynamic'
+const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
+  ssr: false,
+});
+
+
 export default function Page() {
   return (
     <main className="flex flex-col overflow-hidden snap-y snap-mandatory child:snap-start">
@@ -47,7 +54,7 @@ export default function Page() {
 
       <Contact />
       {/* <iframe src="https://connectedhubs.ie/hubs/embed/143?type=desks" title="Soma Coworking Desks" width="100%" height="800px" frameBorder="0" ></iframe> */}
-
+      <DynamicScrollHandler/>
     </main>
   );
 }

@@ -24,6 +24,7 @@ const Head: React.FC<{
   txtColor : SomaTextColor,
   className?: string,
   padding?: string,
+  fadeIn? : boolean,
 }> = ({
   children,
   size,
@@ -31,9 +32,10 @@ const Head: React.FC<{
   align,
   className = "",
   padding = "pb-3",
+  fadeIn = true,
 }) => {
   return(<>
-    <div className={align+" "+padding+" " +className+" "+size+" font-semibold "+txtColor}>
+    <div className={(fadeIn ? "fade-in-hidden " : "")+align+" "+padding+" " +className+" "+size+" font-semibold "+txtColor}>
       {children}
     </div>
   </>);
@@ -44,11 +46,13 @@ const Body: React.FC<{
   size?: string,
   align : Align,
   txtColor : SomaTextColor,
+  fadeIn? : boolean,
 }> = ({
   children,
   size = "text-base",
   align,
   txtColor,
+  fadeIn = true,
 }) => {
   const bodySize =
     align === "text-center" ? (
@@ -58,7 +62,7 @@ const Body: React.FC<{
     )
 
   return(<>
-    <div className={"flex w-full "+(align === "text-center" ? "justify-around" : "")}>
+    <div className={(fadeIn ? "fade-in-hidden" : "")+" flex w-full "+(align === "text-center" ? "justify-around" : "")}>
       <div className={align+" "+bodySize+" "+txtColor}>
         <p className={size}>{children}</p>
       </div>
