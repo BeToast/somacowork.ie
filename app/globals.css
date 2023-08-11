@@ -34,6 +34,9 @@
   }
 }
 
+.textlogo-width {
+  width: calc(3.033208333 * var(--header-height));
+}
 
 .soma-header-expand {
   animation-name: expand;

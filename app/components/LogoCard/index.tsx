@@ -11,7 +11,7 @@ const LogoCard: React.FC<{
   return(<>
     <div className="flex">
       <div className="flex-col justify-start fill-orange pr-3">
-        <div className="h-8">
+        <div className="h-8 w-[47.469px]">
           {logo.hlogo}
         </div>
       </div>

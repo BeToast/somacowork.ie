@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       {/* LEFT */}
       <div className="flex flex-col items-center pr-2 space-y-6 sm:space-y-0">
         <a className="" onClick={() => (setBurgerOpen(false))} href="#">
-          <div className="soma-header-height">
+          <div className="soma-header-height textlogo-width">
             {logo.textlogo}
           </div>
         </a>
