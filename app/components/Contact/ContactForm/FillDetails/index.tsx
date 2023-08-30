@@ -3,6 +3,8 @@ import SomaButton from "components/SomaButton";
 import InputField from "./InputField";
 import { input } from "../type";
 import sendBrevoEmail from "private/sendBrevoEmail";
+import { logEvent } from "firebase/analytics";
+import { getGoogleAnalytics } from "@/app/firebase";
 
 const FillDetails: React.FC<{
   className?: string,
@@ -21,8 +23,8 @@ const FillDetails: React.FC<{
   submitAgain: boolean,
 }> = ({
   className,
-  contactFormFields,
-  formObj,
+  contactFormFields, //the input boxes
+  formObj, //input field and the option selected
   formSent,
   setFormSent,
   setFormSubmittedModalOpen,
@@ -33,7 +35,7 @@ const FillDetails: React.FC<{
     var allInputsValid = true;
     contactFormFields.forEach(field => {
       // console.log(allInputsValid);
-      console.log(field.id+" is "+field.valid);
+      // console.log(field.id+" is "+field.valid);
       if(field.valid === undefined) return;
       if(field.valid === false){
         allInputsValid = false;
@@ -46,7 +48,8 @@ const FillDetails: React.FC<{
     if(allInputsValid) {
       setFormSubmittedModalOpen(true);
       setFormSent(true);
-      // sendBrevoEmail(formObj);   
+      sendBrevoEmail(formObj);
+      logEvent(getGoogleAnalytics(), 'form_submitted', {description: 'Product Selected: '+formObj.option});
     }
   }
 

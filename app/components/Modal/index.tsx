@@ -63,6 +63,7 @@ const Head: React.FC<HeadProps> = ({ children }) => (
     align={"text-left"}
     txtColor={"text-orange"}
     padding="p-6"
+    fadeIn={false}
   >
     {children}
   </SomaCard.Head>

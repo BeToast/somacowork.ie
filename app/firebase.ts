@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 
-// import { getAnalytics } from "firebase/analytics";
+import { getAnalytics } from "firebase/analytics";
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -19,6 +19,14 @@ export const app = initializeApp(firebaseConfig);
 export const getFirebaseApp = () => {
   return app;
 }
+
+// Initialize Analytics and get a reference to the service
+const analytics = getAnalytics(app);
+export const getGoogleAnalytics = () => {
+  return analytics;
+}
+
+
 
 // //AUTHENTICATION
 

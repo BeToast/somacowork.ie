@@ -11,7 +11,6 @@ const ScrollHandler: React.FC<{
   const viewHeight: number = window.innerHeight;
 
   const checkItems = () => {
-    console.log(fadeIn.length);
     for(let i = 0; i < fadeIn.length; i++){
       var currItem = fadeIn[i];
       if(currItem){
