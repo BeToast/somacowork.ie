@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
-
 import { getAnalytics } from "firebase/analytics";
 
+
+export const measurementId = "G-D1LNVCEZ9C";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -11,20 +12,15 @@ const firebaseConfig = {
   storageBucket: "soma-cowor.appspot.com",
   messagingSenderId: "177534103773",
   appId: "1:177534103773:web:8f678b2dbc10b719546b34",
-  measurementId: "G-D1LNVCEZ9C"
+  measurementId: measurementId,
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const getFirebaseApp = () => {
-  return app;
-}
 
 // Initialize Analytics and get a reference to the service
-const analytics = getAnalytics(app);
-export const getGoogleAnalytics = () => {
-  return analytics;
-}
+export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
+// console.log(analytics === null ? "No analytics" : "Analytics working");
 
 
 

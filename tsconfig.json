@@ -27,6 +27,6 @@
       "private/*": ["./private.somacowork.ie/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote", "app/components/Footer/static.jss"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote", "app/components/Footer/static.jss", "app/Analytics"],
   "exclude": ["node_modules"]
 }

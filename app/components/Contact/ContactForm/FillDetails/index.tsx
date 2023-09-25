@@ -3,8 +3,6 @@ import SomaButton from "components/SomaButton";
 import InputField from "./InputField";
 import { input } from "../type";
 import sendBrevoEmail from "private/sendBrevoEmail";
-import { logEvent } from "firebase/analytics";
-import { getGoogleAnalytics } from "@/app/firebase";
 
 const FillDetails: React.FC<{
   className?: string,
@@ -49,7 +47,7 @@ const FillDetails: React.FC<{
       setFormSubmittedModalOpen(true);
       setFormSent(true);
       sendBrevoEmail(formObj);
-      logEvent(getGoogleAnalytics(), 'form_submitted', {description: 'Product Selected: '+formObj.option});
+      // logEvent(getGoogleAnalytics(), 'form_submitted', {description: 'Product Selected: '+formObj.option});
     }
   }
 
