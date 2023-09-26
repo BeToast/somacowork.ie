@@ -25,6 +25,7 @@
       "static/*": ["./app/static/*"],
       "image/*": ["./app/image/*"],
       "private/*": ["./private.somacowork.ie/*"],
+      "lib/*": ["./app/lib/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/SomaQuote", "app/components/Footer/static.jss", "app/Analytics"],

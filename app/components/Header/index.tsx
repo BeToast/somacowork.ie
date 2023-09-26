@@ -2,9 +2,10 @@
 
 import { logo } from "static/svg";
 import Burger from "./Burger";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { headerLinks } from "./static";
+// import Link from "next/link";
 
 const Header: React.FC = () => {
 

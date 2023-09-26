@@ -1,9 +1,11 @@
 import './globals.css'
+
 import type { Metadata } from 'next'
 
 import Header from 'components/Header';
 import Footer from 'components/Footer/index';
-import Analytics from 'components/Analytics';
+// import Gtag from 'components/Gtag';
+import GtagScriptInit from 'components/Gtag/GtagScriptInit';
 
 //firebase
 // import { getFirebaseApp } from './firebase'
@@ -11,12 +13,10 @@ import Analytics from 'components/Analytics';
 
 //font
 import { Outfit } from 'next/font/google'
-
-//analytics
-// import GoogleAnalytics from './GoogleAnalytics.tsx';
-
-
+import Script from 'next/script';
+import measurementId from './lib/ga/measurementId';
 const outfit = Outfit({ subsets: ['latin'] });
+
 
 export const metadata: Metadata = {
   title: 'soma',
@@ -37,16 +37,13 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth'>
       <head>
       </head>
-      {/* {isProduction && ( */}
-        {/* <GoogleAnalytics/> */}
-      {/* )} */}
-      <Analytics />
       <body className={outfit.className}>
         <div className="flex flex-col min-h-screen">
           <Header />
           {children}
           <Footer />
         </div>
+        <GtagScriptInit />
       </body>
     </html>
   )
