@@ -13,8 +13,6 @@ import GtagScriptInit from 'components/Gtag/GtagScriptInit';
 
 //font
 import { Outfit } from 'next/font/google'
-import Script from 'next/script';
-import measurementId from './lib/ga/measurementId';
 const outfit = Outfit({ subsets: ['latin'] });
 
 

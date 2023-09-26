@@ -1,2 +1,2 @@
-const measurementId = "G-NKK2PXBTGT" ;
+const measurementId = "G-D1LNVCEZ9C" ;
 export default measurementId ;
