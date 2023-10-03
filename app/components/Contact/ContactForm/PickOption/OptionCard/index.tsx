@@ -19,7 +19,7 @@ const OptionCard: React.FC<{
 
   const selectedClass = (title === option
     ?
-      'bg-orange text-white fill-white'
+      'bg-orange-desaturate text-white fill-white'
     :
       'bg-white hover:border-orange hover:fill-orange'
     );

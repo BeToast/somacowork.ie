@@ -31,6 +31,7 @@ module.exports = {
       current: 'currentColor',
       orange: {
         DEFAULT: '#fd5829',
+        desaturate: '#ee552b',
         dark: '#cc4823',
       },
       grey: {
@@ -39,6 +40,7 @@ module.exports = {
         300: '#6c757d',
         text: '#343a40',
         DEFAULT: '#343a40',
+        500: '#1e2124',
       },
       white: '#FFFFFF',
       black: '#000000',

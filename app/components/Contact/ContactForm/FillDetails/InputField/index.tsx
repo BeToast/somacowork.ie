@@ -74,7 +74,7 @@ const InputField: React.FC<{
   return(<>
     <label
       htmlFor={id}
-      className={(type == "input" ? "" : "md:col-span-2") +" relative block border border-grey shadow-sm focus-within:border-orange focus-within:border-1 focus-within:ring-orange"}
+      className={(type == "input" ? "" : "md:col-span-2 ")+(validRegex ? " text-grey " : "border-orange ") + (hook ? "border-grey-300 " : "border-grey ") + " relative block border shadow-sm focus-within:border-orange focus-within:border-1 focus-within:ring-orange"}
     >
       {(type == "input" ?
         (<>
@@ -82,28 +82,28 @@ const InputField: React.FC<{
             type="text"
             name={name.toString()}
             id={id}
-            className="w-full p-2 peer border-none font-light bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+            className="w-full p-2 pl-[11.5px] peer border-none text-black font-light bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
             placeholder={placeholder}
             onBlur={onBlurHandler}
             onKeyDown={onKeyDownHandler}
           />
           <span
-            className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs peer-placeholder-shown:text-grey-300 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-black "
+            className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs peer-placeholder-shown:text-grey-300 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-grey-500 "
           >
-            {( validRegex ? label : invalidRegexMsg )}
+            {( validRegex ? label : <span className='text-orange font-medium'>{invalidRegexMsg}</span>)}
           </span>
         </>) : (<>
           <textarea
             name={name.toString()}
             id={id}
-            className="w-full p-2 peer border-none font-light bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+            className="w-full p-2 peer border-none text-black font-light bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
             rows={4}
             placeholder={label}
             onBlur={onBlurHandler}
             onKeyDown={onKeyDownHandler}
           />
           <span
-            className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs peer-placeholder-shown:text-grey-300 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-black "
+            className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs peer-placeholder-shown:text-grey-300 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-grey-500 "
           >
             {label}
           </span>
