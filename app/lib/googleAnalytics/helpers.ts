@@ -1,5 +1,10 @@
 import measurementId from "./measurementId" ;
 
+//remove ts error with windows.gtag
+declare const window: {
+  gtag: any;
+} & Window;
+
 export const pageview = (url: string) => {
   // console.log("pageview log fired");
   window.gtag("config", measurementId, {
@@ -9,12 +14,12 @@ export const pageview = (url: string) => {
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = (
-  { action, category, label, value }
+  { action, category, label, value=0 }
   :
   { action: string,
     category:string,
     label:string,
-    value:number 
+    value?:number 
   }
 ) => {
   window.gtag("event", action, {

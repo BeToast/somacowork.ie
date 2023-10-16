@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-import measurementId from "lib/ga/measurementId";
+import measurementId from "lib/googleAnalytics/measurementId";
 
 export const GtagScriptInit: React.FC<{
   
