@@ -14,7 +14,7 @@ const FeaturesAmenities: React.FC<{
       id="amenities"
       className="flex"
     >
-      <div className="items-center flex flex-col space-y-8 sm:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
+      <div className="items-center flex flex-col space-y-8 md:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
         <div className="w-full xs:w-4/5">
           <SomaCard.Frame className="pt-4">
             <SomaCard.Head
@@ -35,10 +35,9 @@ const FeaturesAmenities: React.FC<{
         </div>
       </div>
       {/* image */}
-      <div className="hidden sm:block w-2/5">
+      <div className="hidden md:block w-2/5">
         <div className="h-full overflow-clip">
           <Image 
-            // src={somaImage.handsComputer}
             src={somaImage.evanHands}
             className="object-cover object-left h-full"
             alt={""}

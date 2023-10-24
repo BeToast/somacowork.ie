@@ -24,10 +24,9 @@ const About: React.FC<{
           </div>
         </div>
       </div> */}
-      <div className="hidden sm:block w-2/5">
+      <div className="w-2/5 hidden md:block">
         <div className="h-full overflow-clip">
-          <img 
-            // src="https://tecdn.b-cdn.net/img/new/slides/041.jpg"
+          <img
             src="/moycullen_car.webp"
             className="object-cover object-right h-full"
             alt={""}
@@ -36,7 +35,7 @@ const About: React.FC<{
       </div>
 
 
-      <div className="flex flex-col space-y-8 sm:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
+      <div className="flex flex-col space-y-8 md:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
         <div className="w-full xs:w-4/5">
           <SomaCard.Frame className="pt-4">
             <SomaCard.Head
