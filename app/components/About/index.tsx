@@ -2,6 +2,8 @@ import SomaCard from "components/SomaCard";
 import LogoCard from "../LogoCard";
 import somaImage from "static/image";
 
+import "./helpers";
+
 const About: React.FC<{
 
 }> = ({
@@ -12,30 +14,16 @@ const About: React.FC<{
       id="about"
       className="flex"
     >
-      {/* image */}
-      {/* <div className="hidden sm:block w-2/5">
-        <div className="h-full rtl-grid overflow-hidden">
-          <div className="h-full rtl-grid overflow-clip">
-            <Image 
-              src={somaImage.moycullenCar}
-              className="object-cover h-full shadow-sm"
-              alt={""}
-            />
-          </div>
-        </div>
-      </div> */}
-      <div className="w-2/5 hidden md:block">
-        <div className="h-full overflow-clip">
-          <img
-            src="/moycullen_car.webp"
-            className="object-cover object-right h-full"
-            alt={""}
-          />
-        </div>
+      <div className="listen-h w-2/5 hidden md:block overflow-clip">
+        <img
+          src="/moycullen_car.webp"
+          className="object-cover object-right h-full"
+          alt={""}
+        />
       </div>
 
 
-      <div className="flex flex-col space-y-8 md:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
+      <div className="declare-h flex flex-col space-y-8 md:w-3/5 px-4 py-14"> {/* hardcoded padding!!! */}
         <div className="w-full xs:w-4/5">
           <SomaCard.Frame className="pt-4">
             <SomaCard.Head
