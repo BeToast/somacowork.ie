@@ -13,7 +13,7 @@ const Home: React.FC<{
       id="home"
       className={className+" flex flex-col"}
     >
-      <div className="grow min-h-[250px] relative  flex justify-center shadow-md overflow-clip">
+      <div className="grow min-h-[250px] relative flex justify-center shadow-md overflow-clip">
         <Image
           // src={somaImage.cup}
           src={somaImage.cupTall}
