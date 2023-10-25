@@ -63,7 +63,7 @@ const Body: React.FC<{
 
   return(<>
     <div className={(fadeIn ? "fade-in-hidden" : "")+" flex w-full "+(align === "text-center" ? "justify-around" : "")}>
-      <div className={align+" "+bodySize+" "+txtColor}>
+      <div className={align+" "+bodySize+" "+txtColor+"  max-w-prose"}>
         <p className={size}>{children}</p>
       </div>
     </div>

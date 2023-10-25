@@ -15,12 +15,12 @@ const Home: React.FC<{
     >
       <div className="grow min-h-[250px] relative flex justify-center shadow-md overflow-clip">
         <Image
-          // src={somaImage.cup}
           src={somaImage.cupTall}
-          className="absolute w-full bottom-0 min-w-[768px] left-1/2 -translate-x-1/2"
+          className="absolute h-full bottom-0 object-cover object-bottom"
           alt={""}
           priority={true}
-          placeholder = 'blur' 
+          placeholder = 'blur'
+          fill
         />
       </div>
       <div className="grow-0">

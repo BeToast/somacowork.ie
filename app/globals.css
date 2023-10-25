@@ -28,10 +28,7 @@
 }
 
 .home-y {
-  height: calc(100vh - var(--header-height-total));
-  @media(max-width: 320px) { 
-    height: auto;
-  }
+  min-height: calc(100vh - var(--header-height-total));
 }
 
 .textlogo-width {

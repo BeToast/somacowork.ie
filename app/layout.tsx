@@ -17,7 +17,7 @@ const outfit = Outfit({ subsets: ['latin'] });
 
 
 export const metadata: Metadata = {
-  title: 'SOMA coworking space - Moycullen, Galway',
+  title: 'Soma Coworking - Moycullen, Galway',
   description: 'Soma coworking in Moycullen, Galway',
 }
 
